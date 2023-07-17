@@ -10,11 +10,13 @@ import SwiftUI
 struct HistoricoView: View {
     var body: some View {
         VStack{
+            //COMECO TITULO
             Text("Historico")
-                .bold()
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .trailing)
+                .font(.system(size: 45, design: .rounded))
+                .padding()
             Spacer()
+            //FIM TITULO
+            
         }
     }
 }

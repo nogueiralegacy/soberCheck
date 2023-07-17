@@ -13,6 +13,7 @@
 		F2D7E29B2A60728A00AC29EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7E29A2A60728A00AC29EC /* Preview Assets.xcassets */; };
 		F37F036D2A61CCE300FFB497 /* HistoricoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F036C2A61CCE300FFB497 /* HistoricoView.swift */; };
 		F37F036F2A61CCF900FFB497 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F036E2A61CCF900FFB497 /* ConfigView.swift */; };
+		F3D4AF102A65D47B00DFA9AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4AF0F2A65D47B00DFA9AE /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F2D7E29A2A60728A00AC29EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F37F036C2A61CCE300FFB497 /* HistoricoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoView.swift; sourceTree = "<group>"; };
 		F37F036E2A61CCF900FFB497 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		F3D4AF0F2A65D47B00DFA9AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F2D7E2992A60728A00AC29EC /* Preview Content */,
 				F37F036C2A61CCE300FFB497 /* HistoricoView.swift */,
 				F37F036E2A61CCF900FFB497 /* ConfigView.swift */,
+				F3D4AF0F2A65D47B00DFA9AE /* HomeView.swift */,
 			);
 			path = aplicativo;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				F37F036F2A61CCF900FFB497 /* ConfigView.swift in Sources */,
 				F2D7E2962A60728800AC29EC /* ContentView.swift in Sources */,
 				F37F036D2A61CCE300FFB497 /* HistoricoView.swift in Sources */,
+				F3D4AF102A65D47B00DFA9AE /* HomeView.swift in Sources */,
 				F2D7E2942A60728800AC29EC /* aplicativoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

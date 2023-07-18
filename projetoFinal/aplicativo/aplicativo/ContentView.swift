@@ -17,11 +17,11 @@ struct ContentView: View {
                 HomeView()
                     .badge(2)
                     .tabItem {
-                        Label("Medir", systemImage: "HomeKit")
+                        Label("Medir", systemImage: "house")
                     }
                 HistoricoView()
                     .tabItem {
-                        Label("Historico", systemImage: "lock.arrow.circlepath")
+                        Label("Historico", systemImage: "clock.arrow.circlepath")
                     }
                 ConfigView()
                     .tabItem {

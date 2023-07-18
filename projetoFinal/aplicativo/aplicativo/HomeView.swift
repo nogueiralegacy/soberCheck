@@ -9,6 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var foiMedido = false
+    @State private var shadowColor: Color = .black
+    @State private var shadowRadius: CGFloat = 5
+    @State private var shadowX: CGFloat = 5
+    @State private var shadowY: CGFloat = 2
+    
     var body: some View {
         ZStack {
             // Cor do fundo
@@ -27,6 +32,7 @@ struct HomeView: View {
                 ZStack {
                     Circle()
                         .fill(Color(foiMedido ? .green : .white))
+                        .shadow(color: shadowColor, radius: shadowRadius, x: shadowX, y: shadowY)
                         .overlay(
                                     RoundedRectangle(cornerRadius: 100)
                                         .stroke(Color.purple, lineWidth: 5)

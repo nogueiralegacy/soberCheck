@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    
     var body: some View {
         VStack{
             TabView {
                 HomeView()
-                    .badge(2)
                     .tabItem {
                         Label("Medir", systemImage: "house")
                     }

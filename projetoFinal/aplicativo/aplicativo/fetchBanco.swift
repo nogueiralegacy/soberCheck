@@ -4,7 +4,7 @@ struct Medida: Codable{
     let _id: String
     let _rev: String
     let dataHora: String
-    let valor: Double
+    let valor: CGFloat
 }
 
 class Banco : ObservableObject {

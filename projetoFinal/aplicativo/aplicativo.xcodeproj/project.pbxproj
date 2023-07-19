@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2C45E852A685800007BEA97 /* fetchBanco.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C45E842A685800007BEA97 /* fetchBanco.swift */; };
+		F2C45E892A68627A007BEA97 /* Grafico.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C45E882A68627A007BEA97 /* Grafico.swift */; };
 		F2D7E2942A60728800AC29EC /* aplicativoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7E2932A60728800AC29EC /* aplicativoApp.swift */; };
 		F2D7E2962A60728800AC29EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7E2952A60728800AC29EC /* ContentView.swift */; };
 		F2D7E2982A60728A00AC29EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7E2972A60728A00AC29EC /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		F2C45E842A685800007BEA97 /* fetchBanco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchBanco.swift; sourceTree = "<group>"; };
+		F2C45E882A68627A007BEA97 /* Grafico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grafico.swift; sourceTree = "<group>"; };
 		F2D7E2902A60728800AC29EC /* aplicativo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aplicativo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D7E2932A60728800AC29EC /* aplicativoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aplicativoApp.swift; sourceTree = "<group>"; };
 		F2D7E2952A60728800AC29EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		F2D7E2872A60728800AC29EC = {
 			isa = PBXGroup;
 			children = (
+				F2C45E882A68627A007BEA97 /* Grafico.swift */,
 				F2D7E2922A60728800AC29EC /* aplicativo */,
 				F2D7E2912A60728800AC29EC /* Products */,
 			);
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C45E892A68627A007BEA97 /* Grafico.swift in Sources */,
 				F37F036F2A61CCF900FFB497 /* ConfigView.swift in Sources */,
 				F2D7E2962A60728800AC29EC /* ContentView.swift in Sources */,
 				F2C45E852A685800007BEA97 /* fetchBanco.swift in Sources */,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2C45E852A685800007BEA97 /* fetchBanco.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C45E842A685800007BEA97 /* fetchBanco.swift */; };
 		F2D7E2942A60728800AC29EC /* aplicativoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7E2932A60728800AC29EC /* aplicativoApp.swift */; };
 		F2D7E2962A60728800AC29EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7E2952A60728800AC29EC /* ContentView.swift */; };
 		F2D7E2982A60728A00AC29EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7E2972A60728A00AC29EC /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2C45E842A685800007BEA97 /* fetchBanco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchBanco.swift; sourceTree = "<group>"; };
 		F2D7E2902A60728800AC29EC /* aplicativo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aplicativo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D7E2932A60728800AC29EC /* aplicativoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aplicativoApp.swift; sourceTree = "<group>"; };
 		F2D7E2952A60728800AC29EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,11 +61,12 @@
 			children = (
 				F2D7E2932A60728800AC29EC /* aplicativoApp.swift */,
 				F2D7E2952A60728800AC29EC /* ContentView.swift */,
+				F3D4AF0F2A65D47B00DFA9AE /* HomeView.swift */,
+				F37F036E2A61CCF900FFB497 /* ConfigView.swift */,
+				F37F036C2A61CCE300FFB497 /* HistoricoView.swift */,
 				F2D7E2972A60728A00AC29EC /* Assets.xcassets */,
 				F2D7E2992A60728A00AC29EC /* Preview Content */,
-				F37F036C2A61CCE300FFB497 /* HistoricoView.swift */,
-				F37F036E2A61CCF900FFB497 /* ConfigView.swift */,
-				F3D4AF0F2A65D47B00DFA9AE /* HomeView.swift */,
+				F2C45E842A685800007BEA97 /* fetchBanco.swift */,
 			);
 			path = aplicativo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				F37F036F2A61CCF900FFB497 /* ConfigView.swift in Sources */,
 				F2D7E2962A60728800AC29EC /* ContentView.swift in Sources */,
+				F2C45E852A685800007BEA97 /* fetchBanco.swift in Sources */,
 				F37F036D2A61CCE300FFB497 /* HistoricoView.swift in Sources */,
 				F3D4AF102A65D47B00DFA9AE /* HomeView.swift in Sources */,
 				F2D7E2942A60728800AC29EC /* aplicativoApp.swift in Sources */,

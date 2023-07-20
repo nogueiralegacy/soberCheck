@@ -45,7 +45,6 @@
 		F2D7E2872A60728800AC29EC = {
 			isa = PBXGroup;
 			children = (
-				F2C45E882A68627A007BEA97 /* Grafico.swift */,
 				F2D7E2922A60728800AC29EC /* aplicativo */,
 				F2D7E2912A60728800AC29EC /* Products */,
 			);
@@ -70,6 +69,7 @@
 				F2D7E2972A60728A00AC29EC /* Assets.xcassets */,
 				F2D7E2992A60728A00AC29EC /* Preview Content */,
 				F2C45E842A685800007BEA97 /* fetchBanco.swift */,
+				F2C45E882A68627A007BEA97 /* Grafico.swift */,
 			);
 			path = aplicativo;
 			sourceTree = "<group>";

@@ -1,20 +1,41 @@
-//
-//  ConfigView.swift
-//  aplicativo
-//
-//  Created by Student02 on 14/07/23.
-//
-
 import SwiftUI
 
 struct ConfigView: View {
+
+    @ObservedObject var favoritesStore: FavoritesStore = .standard
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(favoritesStore.favorites, id: \.self) { favorite in
+                NavigationLink(favorite) {
+                    FavoriteDetailView(favorite: favorite)
+                }
+            }.navigationTitle("Configurações")
+        }
     }
 }
 
-struct ConfigView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConfigView()
+struct FavoriteDetailView: View {
+
+    let favorite: String
+
+    var body: some View {
+        VStack {
+            Text(favorite)
+        }
+    }
+}
+
+final class FavoritesStore: ObservableObject {
+    static let standard = FavoritesStore()
+
+    @Published var favorites: [String] = ["Dados Coletados", "Sobre", "Direitos"]
+
+    func add(_ favorite: String) {
+        favorites.append(favorite)
+    }
+
+    func remove(_ favorite: String) {
+        favorites.removeAll(where: { $0 == favorite })
     }
 }

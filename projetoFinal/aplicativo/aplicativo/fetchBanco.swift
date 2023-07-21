@@ -11,7 +11,7 @@ class Banco : ObservableObject {
     @Published var medidas: [Medida] = []
     
     func fetch() {
-        guard let url = URL(string: "http://127.0.0.1:1880/todos")
+        guard let url = URL(string: "http://192.168.0.158:1880/dadoRead")
         else {
             return
         }

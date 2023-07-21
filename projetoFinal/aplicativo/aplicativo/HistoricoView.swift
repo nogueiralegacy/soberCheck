@@ -22,26 +22,23 @@ struct HistoricoView: View {
                     .fontWeight(.black)
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 10)
-                
-                ForEach(banco.medidas, id: \._id ){medida in
-                   
-                    VStack {
-                        Text(medida.data)
-                            .font(.subheadline)
-                        .padding(3)
-                                            
-                        Text("\(medida.valor)")
-                            .padding(.bottom, 3)
-                                           
+                VStack {
+                    
+                    
+                    ForEach(banco.medidas, id: \._id ){medida in
+                        
+                        VStack {
+                            Text(medida.data)
+                            
+                            Text("\(medida.valor)")
+                            
+                        }
+                        .padding(2)
                     }
-                    .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.blue, lineWidth: 2)
-                            )
                 }
             } // VStack
             .onAppear(){
-                Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true){_ in
+                Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true){_ in
                     banco.fetch()
                 }
             }

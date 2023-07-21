@@ -8,23 +8,48 @@
 import SwiftUI
 
 struct HistoricoView: View {
+    @StateObject var banco = Banco()
+
     var body: some View {
         ZStack {
             // Cor do fundo
             LinearGradient(colors: [.white, .white], startPoint: .topLeading, endPoint: .bottomTrailing)
             
-            VStack {
-                Text("SoberCheck")
-                    .font(.system(size: 45, design: .rounded))
+            
+            VStack() {
+                Text("Histórico")
+                    .font(.system(size: 20, design: .rounded))
                     .fontWeight(.black)
-                    .offset(y: 60)
-                    .foregroundStyle(.purple)
-                Spacer()
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom, 10)
                 
+                ForEach(banco.medidas, id: \._id ){medida in
+                   
+                    VStack {
+                        Text(medida.data)
+                            .font(.subheadline)
+                        .padding(3)
+                                            
+                        Text("\(medida.valor)")
+                            .padding(.bottom, 3)
+                                           
+                    }
+                    .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.blue, lineWidth: 2)
+                            )
+                }
             } // VStack
+            .onAppear(){
+                Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true){_ in
+                    banco.fetch()
+                }
+            }
+            
             
         } // ZStack
         .edgesIgnoringSafeArea(.all)
+        
     }
 }
 

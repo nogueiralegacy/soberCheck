@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var foiMedido = false
+    
     @State private var shadowColor: Color = .black
     @State private var shadowRadius: CGFloat = 5
     @State private var shadowX: CGFloat = 5
     @State private var shadowY: CGFloat = 2
+    
+    @State private var isAtivo = false
     
     var body: some View {
         ZStack {
@@ -21,38 +23,41 @@ struct HomeView: View {
             
             VStack {
                 Text("SoberCheck")
-                    .font(.system(size: 45, design: .rounded))
+                    .font(.system(size: 38, design: .rounded))
                     .fontWeight(.black)
                     .offset(y: 60)
                     .foregroundStyle(.purple)
+                    .zIndex(1)
                     
                 
-                Spacer()
-                
-                ZStack {
-                    Circle()
-                        .fill(Color(foiMedido ? .green : .white))
-                        .shadow(color: shadowColor, radius: shadowRadius, x: shadowX, y: shadowY)
-                        .overlay(
-                                    RoundedRectangle(cornerRadius: 100)
-                                        .stroke(Color.purple, lineWidth: 5)
-                                )
-                        .frame(width: 200, height: 200)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 1.0)) {
-                                foiMedido.toggle()
-                            }
-                        }
-                        
-                    
-                    Text("Medir")
-                        .font(.system(size: 24))
-                        .bold()
-                                            
-                    
-                } // ZStack
 
-                Spacer()
+                NavigationView {
+                    ZStack {
+                        NavigationLink( destination: Grafico(), isActive: $isAtivo, label: {
+                            EmptyView()
+                        })
+                        .frame(width: 200, height: 200)
+                        
+                        
+                        
+                        Circle()
+                            .fill(Color(.white))
+                            .shadow(color: shadowColor, radius: shadowRadius, x: shadowX, y: shadowY)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 100)
+                                    .stroke(Color.purple, lineWidth: 5)
+                            )
+                            .frame(width: 200, height: 200)
+                            .onTapGesture{
+                            isAtivo = true
+                        }
+                        Text("Medir")
+                            .font(.system(size: 24))
+                            .bold()
+                        
+                        
+                    } // ZStack
+                }
             } // VStack
             
         } // ZStack
